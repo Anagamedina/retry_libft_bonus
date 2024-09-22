@@ -6,7 +6,7 @@
 /*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 18:21:10 by anamedin          #+#    #+#             */
-/*   Updated: 2024/02/18 18:29:09 by anamedin         ###   ########.fr       */
+/*   Updated: 2024/09/21 18:17:12 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,13 @@ char	*ft_strchr(const char *s, int c)
 	if (s[i] == ch)
 		return ((char *)&s[i]);
 	return (NULL);
+}
+
+int main(void)
+{
+	char str[20] = "hola que tal";
+	int x = 'q';
+	char *result = ft_strchr(str, x);
+	printf("%s", result);
+	return(0);
 }

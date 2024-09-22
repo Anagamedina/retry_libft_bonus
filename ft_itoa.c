@@ -6,7 +6,7 @@
 /*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 20:29:37 by anamedin          #+#    #+#             */
-/*   Updated: 2024/02/19 15:19:18 by anamedin         ###   ########.fr       */
+/*   Updated: 2024/09/21 20:34:39 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,12 @@ char	*ft_itoa(int n)
 	if (sign == -1)
 		str[0] = '-';
 	return (str);
+}
+
+int main(void)
+{
+	int num = 2;
+	char *result = ft_itoa(num);
+	printf("%s", result);
+	return(0);
 }

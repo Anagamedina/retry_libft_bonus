@@ -6,7 +6,7 @@
 /*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 16:12:00 by anamedin          #+#    #+#             */
-/*   Updated: 2024/02/19 15:21:51 by anamedin         ###   ########.fr       */
+/*   Updated: 2024/09/21 20:36:09 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,13 @@ char	*ft_strdup(const char *s1)
 	duplicate[i] = '\0';
 	return (duplicate);
 }
+
+/*int main(void)
+{
+	char s1[] = "hola ana";
+	char *result = ft_strdup(s1);
+	printf("%s", result);
+	return(0);
+
+
+}*/

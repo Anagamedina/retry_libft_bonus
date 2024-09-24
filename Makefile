@@ -6,7 +6,7 @@
 #    By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/20 18:38:08 by anamedin          #+#    #+#              #
-#    Updated: 2024/09/20 19:01:43 by anamedin         ###   ########.fr        #
+#    Updated: 2024/09/24 11:34:40 by anamedin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,13 @@ SRCS =  ft_bzero.c ft_calloc.c \
 	ft_isalnum.c ft_isalpha.c ft_isascii.c \
     ft_isdigit.c ft_isprint.c
 
+SRC_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
+			ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
+			ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
+
 OBJS = $(SRCS:.c=.o)
+
+OBJS_BONUS = $(SRC_BONUS:.c=.o)
 
 #Regla implícita
 all: $(NAME)
@@ -38,15 +44,21 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(ARC) $(NAME) $(OBJS)
 
+bonus: $(OBJS) $(OBJS_BONUS)
+		$(ARC) $(NAME) $(OBJS) $(OBJS_BONUS) 
+
+
 %.o: %.c $(HEADER) Makefile
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+rebonus: fclean bonus
+
+.PHONY: all, clean, fclean, re all bonus

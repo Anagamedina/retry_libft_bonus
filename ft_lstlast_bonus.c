@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anamedin <anamedin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/30 18:45:51 by anamedin          #+#    #+#             */
-/*   Updated: 2024/09/20 19:09:28 by anamedin         ###   ########.fr       */
+/*   Created: 2024/09/24 11:42:39 by anamedin          #+#    #+#             */
+/*   Updated: 2024/09/24 13:20:43 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-void	ft_free(t_list *lst)
+/*void	ft_free(t_list *lst)
 {
 	t_list	*tmp;
 
@@ -31,7 +31,7 @@ void	ft_free(t_list *lst)
 		lst = lst->next;
 		free(tmp);
 	}
-}
+}*/
 
 // int main (void)
 // {

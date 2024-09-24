@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
+/*   By: anamedin <anamedin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/01 22:40:12 by anamedin          #+#    #+#             */
-/*   Updated: 2024/05/04 19:19:49 by anamedin         ###   ########.fr       */
+/*   Created: 2024/09/24 11:40:04 by anamedin          #+#    #+#             */
+/*   Updated: 2024/09/24 13:24:33 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	*lst = NULL;
 }
 
-void	ft_free(t_list **lst)
+/*void	ft_free(t_list **lst)
 {
 	t_list	*tmp;
 
@@ -46,7 +46,7 @@ void	ft_free(t_list **lst)
 		free(tmp->content);
 		free(tmp);
 	}
-}
+}*/
 
 /*int main (void)
 {

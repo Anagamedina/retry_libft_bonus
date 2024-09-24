@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
+/*   By: anamedin <anamedin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 14:17:26 by anamedin          #+#    #+#             */
-/*   Updated: 2024/09/21 19:03:21 by anamedin         ###   ########.fr       */
+/*   Updated: 2024/09/24 10:36:57 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-static char transform(unsigned int index, char c) {
-    if (index % 2 == 0)
-        return (c - 32);  // Convierte en mayúscula si es índice par
-    return c;
-}
+// static char transform(unsigned int index, char c) {
+//     if (index % 2 == 0)
+//         return (c - 32);  // Convierte en mayúscula si es índice par
+//     return c;
+// }
 
-int main()
-{
-	char src[20] = "hola que tal";
-	char *result = ft_strmapi(src, transform) ;
-	printf("%s", result);
-	return(0);
-}
+// int main()
+// {
+// 	char src[20] = "hola que tal";
+// 	char *result = ft_strmapi(src, transform) ;
+// 	printf("%s", result);
+// 	return(0);
+// }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/20 19:15:04 by anamedin          #+#    #+#             */
-/*   Updated: 2024/09/20 19:24:26 by anamedin         ###   ########.fr       */
+/*   Created: 2024/09/24 11:43:06 by anamedin          #+#    #+#             */
+/*   Updated: 2024/09/24 13:21:10 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 t_list	*ft_lstnew(void *content)
 {
-    t_list	*new_node;
+	t_list	*new_node;
 
-    new_node = (t_list *)malloc (sizeof(t_list));
-    if (!neww_node)
-        return (NULL);
-     new_node->content = content;
-     new_node->next = NULL;
-        return (new_node);
+	new_node = (t_list *)malloc (sizeof(t_list));
+	if (!new_node)
+		return (NULL);
+	new_node->content = content;
+	new_node->next = NULL;
+	return (new_node);
 }
-
 
 /*int main(void)
 {
@@ -36,13 +35,13 @@ t_list	*ft_lstnew(void *content)
     // Asignar node1 a lista si lista está vacía
     if (lista == NULL)
         lista = node1;
-	int i = 0;
+    int i = 0;
     while (lista != NULL)
     {
         // Imprimir contenido según su tipo
         printf("nodo[%d]: %s\n",i, (char*)lista->content);
         lista = lista->next;
-		i++;
+        i++;
     }
 
     return (0);

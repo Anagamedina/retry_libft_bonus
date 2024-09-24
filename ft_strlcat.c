@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anamedin <anamedin@student.42barcel>       +#+  +:+       +#+        */
+/*   By: anamedin <anamedin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 18:16:21 by anamedin          #+#    #+#             */
-/*   Updated: 2024/09/21 18:39:38 by anamedin         ###   ########.fr       */
+/*   Updated: 2024/09/24 10:36:49 by anamedin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (i + ft_strlen((char *)src));
 }
 
-int main(void)
-{
-	char des[20] = "hola";
-	char org[20] = "que tal";
-	size_t x = 4;
-	size_t result = ft_strlcat(des, org, x);
-	printf("%zu", result);
-	size_t result2 = strlcat(des, org, x);
-	printf("%zu", result2);
-	return(0);
+// int main(void)
+// {
+// 	char des[20] = "hola";
+// 	char org[20] = "que tal";
+// 	size_t x = 4;
+// 	size_t result = ft_strlcat(des, org, x);
+// 	printf("%zu", result);
+// 	size_t result2 = strlcat(des, org, x);
+// 	printf("%zu", result2);
+// 	return(0);
 
-}
+// }
